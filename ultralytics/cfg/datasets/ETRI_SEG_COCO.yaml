@@ -1,0 +1,58 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO8 dataset (first 8 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco8/
+# Example usage: yolo train data=coco8.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco8  ← downloads here (1 MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /home/user/Dataset/ETRI_COCO # dataset root dir
+train: images/train # train images (relative to 'path') 4 images
+val: images/val # val images (relative to 'path') 4 images
+test: # test images (optional)
+# Classes
+
+names:
+  0: Ped
+  1: Cyc
+  2: Mobike
+  3: Car
+  4: Bus
+  5: Cone
+  6: TL
+
+# Locations
+locs:
+  0: VehLane
+  1: OutgoLane
+  2: MiddleLane
+  3: IncomLane
+  4: Pav
+  5: Jun
+  6: Xing_L
+  7: BusStop
+  8: Parking_L
+
+# Actions
+actions:
+  0: Red
+  1: Amber
+  2: Green
+  3: MovAway
+  4: MovTow
+  5: Blocking
+  6: Informing
+  7: Brake
+  8: Stop
+  9: IncatLft
+  10: IncatRht
+  11: HazLit
+  12: HeadingLft
+  13: HeadingRht
+  14: Parking
+  15: EmVeh
+  16: School
+  17: Control
+  18: Xing
