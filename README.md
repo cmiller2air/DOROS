@@ -42,6 +42,25 @@ The training code leverages the **Ultralytics YOLOv8** framework in segmentation
 
 
 ## Experimental Results
+### Baseline Training Results
+
+| Model Size | Params | Configuration          | mAP-comb(mask) (50 / 50:95) |
+|------------|--------|------------------------|-----------------------------|
+| n          | 3.27M  | Baseline               | 6.09 / 10.44               |
+|            |        | + no flip aug          | 7.05 / 12.15               |
+|            |        | + large img            | 7.29 / 12.35               |
+| s          | 11.80M | Baseline               | 9.63 / 17.02               |
+|            |        | + no flip aug          | 9.89 / 17.61               |
+|            |        | + large img            | 10.66 / 18.76              |
+| m          | 27.26M | Baseline               | 11.07 / 19.74              |
+|            |        | + no flip aug          | 10.67 / 19.93              |
+|            |        | + large img            | 12.22 / 21.81              |
+| l          | 45.96M | Baseline               | 12.24 / 22.11              |
+|            |        | + no flip aug          | 13.09 / 23.76              |
+|            |        | + large img            | 13.95 / 24.44              |
+| x          | 71.78M | Baseline               | 12.87 / 23.15              |
+|            |        | + no flip aug          | 13.90 / 25.32              |
+|            |        | + large img            | 14.54 / 25.55              |
 
 ### Experimental Setup
 - **Hardware**: NVIDIA GeForce RTX 4090 GPU, AMD EPYC 9124 16-core CPU.
