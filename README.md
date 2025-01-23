@@ -34,7 +34,7 @@ DOROS is ideal for:
 
 The dataset is available for download:
 
-[Download DOROS Dataset](https://nanum.etri.re.kr/share/kimjy/ObjectStateDetection)
+[Download DOROS Dataset](https://nanum.etri.re.kr/share/kimjy/ObjectStateDetection2025)
 
 ## Training Code
 
